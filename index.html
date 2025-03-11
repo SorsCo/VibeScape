@@ -1567,17 +1567,19 @@ fbq('track', 'PageView');
 
 
 
-<div id="Booking-Form" class="inquire-card w-node-c19dda67-d558-f48c-1827-c317087668ac-2c277bae">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<div id="Booking-Form" class="inquire-card">
   <div class="heading-wrapper">
     <h1 class="input-heading">Book Now</h1>
     <div class="body-display small">Please share your details so our team can connect with you.</div>
   </div>
   <div class="inquire-form-wrapper">
     <div class="inquire-form w-form">
-      <form id="wf-form-Enquire-Form" name="Enquire Form" data-name="Enquire Form"
-        method="post" action="/" data-netlify="true">
-        <!-- Hidden field required for Netlify -->
-        <input type="hidden" name="form-name" value="Enquire Form">
+      <form id="emailForm" action="https://formsubmit.co/reservations@taumi.in" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Enquiry from Website">
+        <input type="hidden" name="_next" value="https://calm-longma-524405.netlify.app/thank-you.html">
 
         <div class="contact-fields">
           <div class="contact-field-wrapper">
@@ -1593,25 +1595,27 @@ fbq('track', 'PageView');
             <textarea id="Message" name="Message" maxlength="5000" placeholder="Message" required class="text-field message w-input"></textarea>
           </div>
         </div>
-        
+
         <div class="pp-button-wrapper">
-          <a id="sendToWhatsApp" href="#" class="contact-button whatsapp w-button">WhatsApp</a>
-          <input type="submit" data-wait="Please wait..." class="contact-button email w-button" value="Email">
+          <a href="https://wa.me/918779531822" id="sendToWhatsApp" href="#" class="contact-button whatsapp w-button">WhatsApp</a>
+          <button type="submit" class="contact-button email w-button">Send Email</button>
         </div>
       </form>
 
-      <div class="success-message grey w-form-done">
+      <div id="successMessage" class="success-message grey w-form-done" style="display:none;">
         <div class="success-message-content">
           <h3>Thank you!</h3>
-          <div>Your message has been received!</div>
+          <div>Your message has been sent successfully.</div>
         </div>
       </div>
-      <div class="error-state w-form-fail">
+
+      <div id="errorMessage" class="error-state w-form-fail" style="display:none;">
         <div>Oops! Something went wrong while submitting the form.</div>
       </div>
     </div>
   </div>
 </div>
+
 
       </div>
     </div>
