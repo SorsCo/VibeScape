@@ -1567,37 +1567,52 @@ fbq('track', 'PageView');
 
 
 
-        <div id="Booking-Form" class="inquire-card w-node-c19dda67-d558-f48c-1827-c317087668ac-2c277bae">
-          <div class="heading-wrapper">
-            <h1 id="w-node-c19dda67-d558-f48c-1827-c317087668ae-2c277bae" class="input-heading">Book Now</h1>
-            <div class="body-display small">Please share your details so our team can connect with you.</div>
+<div id="Booking-Form" class="inquire-card w-node-c19dda67-d558-f48c-1827-c317087668ac-2c277bae">
+  <div class="heading-wrapper">
+    <h1 class="input-heading">Book Now</h1>
+    <div class="body-display small">Please share your details so our team can connect with you.</div>
+  </div>
+  <div class="inquire-form-wrapper">
+    <div class="inquire-form w-form">
+      <form id="wf-form-Enquire-Form" name="Enquire Form" data-name="Enquire Form"
+        method="post" action="/" data-netlify="true">
+        <!-- Hidden field required for Netlify -->
+        <input type="hidden" name="form-name" value="Enquire Form">
+
+        <div class="contact-fields">
+          <div class="contact-field-wrapper">
+            <input class="text-field w-input" maxlength="256" name="Name" placeholder="Name" type="text" id="Name" required>
           </div>
-          <div class="inquire-form-wrapper">
-            <div class="inquire-form w-form">
-              <form id="wf-form-Enquire-Form" name="wf-form-Enquire-Form" data-name="Enquire Form" redirect="/thank-you" data-redirect="/thank-you" method="get" class="form" data-wf-page-id="66fc39ecfaa3291b2c277bae" data-wf-element-id="c19dda67-d558-f48c-1827-c317087668b4" input type="hidden" name="form-name" value="Enquire Form" data-netlify="true" netlify>
-                <div class="contact-fields">
-                  <div class="contact-field-wrapper"><input class="text-field w-node-c19dda67-d558-f48c-1827-c317087668b7-2c277bae w-input" maxlength="256" name="Name-2" data-name="Name 2" placeholder="Name" type="text" id="Name" required=""></div>
-                  <div class="contact-field-wrapper"><input class="text-field w-node-c19dda67-d558-f48c-1827-c317087668b9-2c277bae w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Email" type="email" id="Email" required=""></div>
-                  <div class="contact-field-wrapper"><input class="text-field w-node-c19dda67-d558-f48c-1827-c317087668bb-2c277bae w-input" maxlength="256" name="Mobile-3" data-name="Mobile 3" placeholder="Mobile" type="tel" id="Mobile" required=""></div>
-                  <div class="contact-field-wrapper _2"><textarea id="Message" name="Message-2" maxlength="5000" data-name="Message 2" placeholder="Message" required="" class="text-field message w-node-c19dda67-d558-f48c-1827-c317087668bd-2c277bae w-input"></textarea></div>
-                </div>
-                <div id="w-node-c19dda67-d558-f48c-1827-c317087668be-2c277bae" class="pp-button-wrapper">
-                  <a id="sendToWhatsApp" href="#" class="contact-button whatsapp w-node-c19dda67-d558-f48c-1827-c317087668bf-2c277bae w-button">Whatsapp</a><input type="submit" data-wait="Please wait..." class="contact-button email w-button" value="EMail">
-                </div>
-              </form>
-              
-              <div class="success-message grey w-form-done">
-                <div class="success-message-content">
-                  <h3>Thank you!</h3>
-                  <div>Your message has been received!</div>
-                </div>
-              </div>
-              <div class="error-state w-form-fail">
-                <div>Oops! Something went wrong while submitting the form.</div>
-              </div>
-            </div>
+          <div class="contact-field-wrapper">
+            <input class="text-field w-input" maxlength="256" name="Email" placeholder="Email" type="email" id="Email" required>
+          </div>
+          <div class="contact-field-wrapper">
+            <input class="text-field w-input" maxlength="256" name="Mobile" placeholder="Mobile" type="tel" id="Mobile" required>
+          </div>
+          <div class="contact-field-wrapper">
+            <textarea id="Message" name="Message" maxlength="5000" placeholder="Message" required class="text-field message w-input"></textarea>
           </div>
         </div>
+        
+        <div class="pp-button-wrapper">
+          <a id="sendToWhatsApp" href="#" class="contact-button whatsapp w-button">WhatsApp</a>
+          <input type="submit" data-wait="Please wait..." class="contact-button email w-button" value="Email">
+        </div>
+      </form>
+
+      <div class="success-message grey w-form-done">
+        <div class="success-message-content">
+          <h3>Thank you!</h3>
+          <div>Your message has been received!</div>
+        </div>
+      </div>
+      <div class="error-state w-form-fail">
+        <div>Oops! Something went wrong while submitting the form.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   </div>
