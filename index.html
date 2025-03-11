@@ -1565,7 +1565,25 @@ fbq('track', 'PageView');
           });
           </script>
 
+<style>
+  .inquire-card {
+    border: 1px solid var(--indicator-outline);
+    background-color: var(--azure);
 
+    max-width: 500px; /* Adjust width as per your design */
+    margin: auto; /* Center the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+    /* ✅ Fix: Set min-height instead of fixed height */
+    min-height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Keeps content vertically centered */
+}
+
+  </style>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
